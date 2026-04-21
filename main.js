@@ -280,22 +280,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // 寬度分配：原本 30% 分給三欄，現在 30% 分給四欄 (各約 7.5%)
         tr.innerHTML = `
-        <td class="p-4 border-r border-slate-800 font-bold text-blue-300/80 text-[10px] w-[7.5%]">
+        <td class="p-4 border-r border-slate-800 font-bold text-blue-300/80 text-[12px] w-[8.5%]">
             ${isFirstInGroup ? (cellToAnnotate === "l1" ? wrapWithTooltip(l1) : l1) : ""}
         </td>
-        <td class="p-4 border-r border-slate-800 text-slate-200 text-[10px] w-[7.5%]">
+        <td class="p-4 border-r border-slate-800 text-slate-200 text-[12px] w-[8.5%]">
             ${cellToAnnotate === "l2" ? wrapWithTooltip(l2) : l2}
         </td>
-        <td class="p-4 border-r border-slate-800 text-slate-200 text-[10px] w-[7.5%]">
+        <td class="p-4 border-r border-slate-800 text-slate-200 text-[12px] w-[8.5%]">
             ${cellToAnnotate === "l3" ? wrapWithTooltip(l3) : l3}
         </td>
-        <td class="p-4 border-r border-slate-800 text-slate-100 text-[10px] font-semibold w-[7.5%]">
+        <td class="p-4 border-r border-slate-800 text-slate-100 text-[12px] font-semibold w-[8.5%]">
             ${cellToAnnotate === "l4" ? wrapWithTooltip(l4) : l4}
         </td>
-        <td class="p-4 border-r border-slate-800 text-sm leading-relaxed w-[35%]">
+        <td class="p-4 border-r border-slate-800 text-sm leading-relaxed w-[33%]">
             ${formatValue(fVal)}
         </td>
-        <td class="p-4 text-sm leading-relaxed w-[35%]">
+        <td class="p-4 text-sm leading-relaxed w-[33%]">
             ${formatValue(pVal)}
         </td>
     `;

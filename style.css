@@ -16,10 +16,28 @@
 td {
     font-size: 0.9rem;
     line-height: 1.5;
+    word-break: break-all; /* 強制換行 */
     vertical-align: top;
 }
 
+/* 置頂表頭關鍵：強制設定不透明背景色 */
+thead th {
+    position: sticky !important;
+    top: 88px; /* 對應頂部選單高度 */
+    z-index: 10;
+    /* 統一設定為不透明背景色，避免穿透感 */
+    background-color: #1e293b !important;
+    box-shadow: 0 2px 5px -1px rgba(0, 0, 0, 0.5);
+}
+
 /* 捲軸美化 */
-::-webkit-scrollbar { width: 8px; }
-::-webkit-scrollbar-track { background: #1e293b; }
-::-webkit-scrollbar-thumb { background: #475569; border-radius: 4px; }
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #1e293b;
+}
+::-webkit-scrollbar-thumb {
+    background: #475569;
+    border-radius: 4px;
+}

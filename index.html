@@ -3,37 +3,9 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>JSON 數據對比工具 - 專業置頂版</title>
+        <title>JSON Display</title>
         <script src="https://cdn.tailwindcss.com"></script>
-        <style>
-            /* 基礎樣式與斑馬紋 */
-            #tableBody tr:nth-child(even) {
-                background-color: rgba(30, 41, 59, 0.4);
-            }
-            #tableBody tr:nth-child(odd) {
-                background-color: rgba(15, 23, 42, 1);
-            }
-            #tableBody tr:hover {
-                background-color: rgba(51, 65, 85, 0.8) !important;
-                transition: all 0.2s ease;
-            }
-
-            /* 強制換行 */
-            td {
-                word-break: break-all;
-                vertical-align: top;
-            }
-
-            /* 置頂表頭關鍵：強制設定不透明背景色 */
-            thead th {
-                position: sticky !important;
-                top: 88px; /* 對應頂部選單高度 */
-                z-index: 10;
-                /* 統一設定為不透明背景色，避免穿透感 */
-                background-color: #1e293b !important;
-                box-shadow: 0 2px 5px -1px rgba(0, 0, 0, 0.5);
-            }
-        </style>
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body class="bg-[#0f172a] text-slate-200 min-h-screen p-10">
         <div class="w-full mx-auto">
@@ -42,7 +14,7 @@
                     class="flex items-center gap-6 bg-slate-800/40 p-4 rounded-xl border border-slate-700 shadow-lg"
                 >
                     <div class="flex items-center gap-3">
-                        <span class="text-blue-400 font-bold">當前群組</span>
+                        <span class="text-blue-400 font-bold">Target</span>
                         <select
                             id="groupSelect"
                             class="bg-slate-900 border border-slate-600 text-white py-2 px-6 rounded-lg outline-none cursor-pointer focus:ring-2 focus:ring-blue-500"
@@ -67,22 +39,22 @@
                     <thead>
                         <tr class="bg-slate-900 text-slate-300">
                             <th
-                                class="p-4 w-[7.5%] text-xs font-bold uppercase border-r border-slate-700 rounded-tl-2xl"
+                                class="p-4 w-[8.5%] text-xs font-bold uppercase text-center border-r border-slate-700 rounded-tl-2xl"
                             >
                                 L1
                             </th>
                             <th
-                                class="p-4 w-[8.5%] text-xs font-bold uppercase border-r border-slate-700"
+                                class="p-4 w-[8.5%] text-xs font-bold uppercase text-center border-r border-slate-700"
                             >
                                 L2
                             </th>
                             <th
-                                class="p-4 w-[8.5%] text-xs font-bold uppercase border-r border-slate-700"
+                                class="p-4 w-[8.5%] text-xs font-bold uppercase text-center border-r border-slate-700"
                             >
                                 L3
                             </th>
                             <th
-                                class="p-4 w-[8.5%] text-xs font-bold uppercase border-r border-slate-700"
+                                class="p-4 w-[8.5%] text-xs font-bold uppercase text-center border-r border-slate-700"
                             >
                                 L4
                             </th>
@@ -100,37 +72,7 @@
                             </th>
                         </tr>
                     </thead>
-                    <!-- <thead>
-                        <tr class="text-slate-300">
-                            <th
-                                class="p-4 w-[10%] text-xs font-bold uppercase border-r border-slate-700 rounded-tl-2xl"
-                            >
-                                大類
-                            </th>
-                            <th
-                                class="p-4 w-[10%] text-xs font-bold uppercase border-r border-slate-700"
-                            >
-                                中類
-                            </th>
-                            <th
-                                class="p-4 w-[10%] text-xs font-bold uppercase border-r border-slate-700"
-                            >
-                                小類
-                            </th>
-                            <th
-                                id="flashHeader"
-                                class="p-4 w-[35%] text-sm font-bold text-blue-400 border-r border-slate-700 text-center"
-                            >
-                                Flash Model
-                            </th>
-                            <th
-                                id="proHeader"
-                                class="p-4 w-[35%] text-sm font-bold text-purple-400 text-center rounded-tr-2xl"
-                            >
-                                Pro Model
-                            </th>
-                        </tr>
-                    </thead> -->
+
                     <tbody id="tableBody"></tbody>
                 </table>
             </div>
