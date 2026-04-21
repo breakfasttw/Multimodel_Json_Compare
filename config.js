@@ -1,35 +1,35 @@
 // 資料設定檔
 const groupDescribe = [
-    {
-        groupName: "wecook",
-        groupDisplayName: "料理123 - 火山燒肉丼",
-        videoUrl: "https://www.instagram.com/reels/DQeDNyygOa0/",
-        enable: true,
-    },
-    {
-        groupName: "walkerdad",
-        groupDisplayName: "喪失老爸 - Dance Cover",
-        videoUrl: "https://www.youtube.com/watch?v=mmAI6_uHO0E",
-        enable: true,
-    },
-    {
-        groupName: "khshu",
-        groupDisplayName: "千千 - 聖誕樹髮型",
-        videoUrl: "https://www.instagram.com/reels/DSkJ1XvkkQe/",
-        enable: true,
-    },
-    {
-        groupName: "2uncle",
-        groupDisplayName: "二伯 - 勝尾寺 Vlog",
-        videoUrl: "https://www.instagram.com/reels/DG0R_ygPI_K/",
-        enable: true,
-    },
-    {
-        groupName: "happy",
-        groupDisplayName: "上發條俱樂部 - 5歲生日 Vlog",
-        videoUrl: "https://www.youtube.com/watch?v=lwHF4Gf74Ho",
-        enable: true,
-    },
+    // {
+    //     groupName: "wecook",
+    //     groupDisplayName: "料理123 - 火山燒肉丼",
+    //     videoUrl: "https://www.instagram.com/reels/DQeDNyygOa0/",
+    //     enable: true,
+    // },
+    // {
+    //     groupName: "walkerdad",
+    //     groupDisplayName: "喪失老爸 - Dance Cover",
+    //     videoUrl: "https://www.youtube.com/watch?v=mmAI6_uHO0E",
+    //     enable: true,
+    // },
+    // {
+    //     groupName: "khshu",
+    //     groupDisplayName: "千千 - 聖誕樹髮型",
+    //     videoUrl: "https://www.instagram.com/reels/DSkJ1XvkkQe/",
+    //     enable: true,
+    // },
+    // {
+    //     groupName: "2uncle",
+    //     groupDisplayName: "二伯 - 勝尾寺 Vlog",
+    //     videoUrl: "https://www.instagram.com/reels/DG0R_ygPI_K/",
+    //     enable: true,
+    // },
+    // {
+    //     groupName: "happy",
+    //     groupDisplayName: "上發條俱樂部 - 5歲生日 Vlog",
+    //     videoUrl: "https://www.youtube.com/watch?v=lwHF4Gf74Ho",
+    //     enable: true,
+    // },
     {
         groupName: "0_shufen",
         groupDisplayName: "0_shufen",
@@ -56,7 +56,7 @@ const groupDescribe = [
     },
     {
         groupName: "achusan0817",
-        groupDisplayName: "achusan0817",
+        groupDisplayName: "achusan0817-阿啾小劇場",
         videoUrl: "",
         enable: true,
     },
@@ -70,82 +70,82 @@ const groupDescribe = [
 
 const fileNameDescribe = [
     // 1. 料理123
-    {
-        fileName: "wecook_pro.json",
-        fileDisplayName: "WeCook (Pro)",
-        groupDisplayName: "料理123 - 火山燒肉丼",
-        url: "./data/wecook123123-20251031183452-1639312187523748_pro.json",
-        model: "pro",
-        video_url: "",
-    },
-    {
-        fileName: "wecook_flash.json",
-        fileDisplayName: "WeCook (Flash)",
-        groupDisplayName: "料理123 - 火山燒肉丼",
-        url: "./data/wecook123123-20251031183452-1639312187523748_flash.json",
-        model: "flash",
-        video_url: "",
-    },
-    // 2. WalkerDad
-    {
-        fileName: "walkerdad_pro.json",
-        fileDisplayName: "WalkerDad (Pro)",
-        groupDisplayName: "喪失老爸 - Dance Cover",
-        url: "./data/walkerdad1228-20250923040624-25870566612599789_pro.json",
-        model: "pro",
-        video_url: "",
-    },
-    {
-        fileName: "walkerdad_flash.json",
-        fileDisplayName: "WalkerDad (Flash)",
-        groupDisplayName: "喪失老爸 - Dance Cover",
-        url: "./data/walkerdad1228-20250923040624-25870566612599789_flash.json",
-        model: "flash",
-        video_url: "",
-    },
-    // 3. khshu (修正檔名含有底線 khshu_)
-    {
-        fileName: "khshu_pro.json",
-        fileDisplayName: "khshu (Pro)",
-        groupDisplayName: "千千 - 聖誕樹髮型",
-        url: "./data/khshu_-20251228133052-1388935893035804_pro.json",
-        model: "pro",
-        video_url: "",
-    },
-    {
-        fileName: "khshu_flash.json",
-        fileDisplayName: "khshu (Flash)",
-        groupDisplayName: "千千 - 聖誕樹髮型",
-        url: "./data/khshu_-20251228133052-1388935893035804_flash.json",
-        model: "flash",
-        video_url: "",
-    },
-    // 4. 2uncle (修正檔名含有 2uncle987)
-    {
-        fileName: "2uncle_pro.json",
-        fileDisplayName: "2uncle (Pro)",
-        groupDisplayName: "二伯 - 勝尾寺 Vlog",
-        url: "./data/2uncle987-20250311234240-1201464022133636_pro.json",
-        model: "pro",
-        video_url: "",
-    },
-    {
-        fileName: "2uncle_flash.json",
-        fileDisplayName: "2uncle (Flash)",
-        groupDisplayName: "二伯 - 勝尾寺 Vlog",
-        url: "./data/2uncle987-20250311234240-1201464022133636_flash.json",
-        model: "flash",
-        video_url: "",
-    },
-    // 5. Happy 5歲生日 (新增 wia627 檔案)
-    {
-        fileName: "happy_pro.json",
-        fileDisplayName: "Happy (Pro)",
-        groupDisplayName: "上發條俱樂部 - 5歲生日 Vlog",
-        url: "./data/wia627-20250212084030-1642331380410258_pro.json",
-        model: "pro",
-        video_url: "",
-    },
+    // {
+    //     fileName: "wecook_pro.json",
+    //     fileDisplayName: "WeCook (Pro)",
+    //     groupDisplayName: "料理123 - 火山燒肉丼",
+    //     url: "./data/wecook123123-20251031183452-1639312187523748_pro.json",
+    //     model: "pro",
+    //     video_url: "",
+    // },
+    // {
+    //     fileName: "wecook_flash.json",
+    //     fileDisplayName: "WeCook (Flash)",
+    //     groupDisplayName: "料理123 - 火山燒肉丼",
+    //     url: "./data/wecook123123-20251031183452-1639312187523748_flash.json",
+    //     model: "flash",
+    //     video_url: "",
+    // },
+    // // 2. WalkerDad
+    // {
+    //     fileName: "walkerdad_pro.json",
+    //     fileDisplayName: "WalkerDad (Pro)",
+    //     groupDisplayName: "喪失老爸 - Dance Cover",
+    //     url: "./data/walkerdad1228-20250923040624-25870566612599789_pro.json",
+    //     model: "pro",
+    //     video_url: "",
+    // },
+    // {
+    //     fileName: "walkerdad_flash.json",
+    //     fileDisplayName: "WalkerDad (Flash)",
+    //     groupDisplayName: "喪失老爸 - Dance Cover",
+    //     url: "./data/walkerdad1228-20250923040624-25870566612599789_flash.json",
+    //     model: "flash",
+    //     video_url: "",
+    // },
+    // // 3. khshu (修正檔名含有底線 khshu_)
+    // {
+    //     fileName: "khshu_pro.json",
+    //     fileDisplayName: "khshu (Pro)",
+    //     groupDisplayName: "千千 - 聖誕樹髮型",
+    //     url: "./data/khshu_-20251228133052-1388935893035804_pro.json",
+    //     model: "pro",
+    //     video_url: "",
+    // },
+    // {
+    //     fileName: "khshu_flash.json",
+    //     fileDisplayName: "khshu (Flash)",
+    //     groupDisplayName: "千千 - 聖誕樹髮型",
+    //     url: "./data/khshu_-20251228133052-1388935893035804_flash.json",
+    //     model: "flash",
+    //     video_url: "",
+    // },
+    // // 4. 2uncle (修正檔名含有 2uncle987)
+    // {
+    //     fileName: "2uncle_pro.json",
+    //     fileDisplayName: "2uncle (Pro)",
+    //     groupDisplayName: "二伯 - 勝尾寺 Vlog",
+    //     url: "./data/2uncle987-20250311234240-1201464022133636_pro.json",
+    //     model: "pro",
+    //     video_url: "",
+    // },
+    // {
+    //     fileName: "2uncle_flash.json",
+    //     fileDisplayName: "2uncle (Flash)",
+    //     groupDisplayName: "二伯 - 勝尾寺 Vlog",
+    //     url: "./data/2uncle987-20250311234240-1201464022133636_flash.json",
+    //     model: "flash",
+    //     video_url: "",
+    // },
+    // // 5. Happy 5歲生日 (新增 wia627 檔案)
+    // {
+    //     fileName: "happy_pro.json",
+    //     fileDisplayName: "Happy (Pro)",
+    //     groupDisplayName: "上發條俱樂部 - 5歲生日 Vlog",
+    //     url: "./data/wia627-20250212084030-1642331380410258_pro.json",
+    //     model: "pro",
+    //     video_url: "",
+    // },
     {
         fileName: "happy_flash.json",
         fileDisplayName: "Happy (Flash)",
@@ -225,19 +225,19 @@ const fileNameDescribe = [
     // achusan0817
     {
         fileName: "achusan0817-20250802181312-1930533867546917.json",
-        fileDisplayName: "achusan0817",
-        groupDisplayName: "achusan0817",
+        fileDisplayName: "Line貼圖上架啦",
+        groupDisplayName: "achusan0817-阿啾小劇場",
         url: "./data/achusan0817-20250802181312-1930533867546917.json",
         model: "flash",
         video_url: "https://www.youtube.com/shorts/A17KAkB0REI",
     },
     {
         fileName: "achusan0817-20250522071346-1427164119064164.json",
-        fileDisplayName: "achusan0817",
-        groupDisplayName: "achusan0817",
+        fileDisplayName: "雅婷的生日",
+        groupDisplayName: "achusan0817-阿啾小劇場",
         url: "./data/achusan0817-20250522071346-1427164119064164.json",
         model: "pro",
-        video_url: "",
+        video_url: "https://www.instagram.com/reels/DFRcyYNTMct/",
     },
     // 5inana
     {
