@@ -34,8 +34,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (!flashConf || !proConf) return;
 
-        flashHeader.textContent = flashConf.fileDisplayName;
-        proHeader.textContent = proConf.fileDisplayName;
+        // flashHeader.textContent = flashConf.fileDisplayName;
+        // proHeader.textContent = proConf.fileDisplayName;
+        flashHeader.innerHTML = `${flashConf.fileDisplayName} ${
+            flashConf.video_url
+                ? `<a href="${flashConf.video_url}" target="_blank" class="ml-1 text-blue-400 hover:text-blue-300">🔗</a>`
+                : ""
+        }`;
+
+        proHeader.innerHTML = `${proConf.fileDisplayName} ${
+            proConf.video_url
+                ? `<a href="${proConf.video_url}" target="_blank" class="ml-1 text-purple-400 hover:text-purple-300">🔗</a>`
+                : ""
+        }`;
 
         try {
             const [flashJson, proJson] = await Promise.all([
@@ -153,12 +164,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // 對應 HTML 的 10, 10, 10, 35, 35 比例
         tr.innerHTML = `
-            <td class="p-4 border-r border-slate-800 font-bold text-blue-300/80 text-[11px]">${isFirstInGroup ? grand : ""}</td>
-            <td class="p-4 border-r border-slate-800 text-slate-400 text-[11px]">${middle}</td>
-            <td class="p-4 border-r border-slate-800 text-slate-100 text-[11px] font-semibold">${small}</td>
-            <td class="p-4 border-r border-slate-800 text-sm leading-relaxed">${formatValue(fVal)}</td>
-            <td class="p-4 text-sm leading-relaxed">${formatValue(pVal)}</td>
-        `;
+        <td class="p-4 border-r border-slate-800 font-bold text-blue-300/80 text-[11px]">${isFirstInGroup ? grand : ""}</td>
+        <td class="p-4 border-r border-slate-800 text-slate-400 text-[11px]">${middle}</td>
+        <td class="p-4 border-r border-slate-800 text-slate-100 text-[11px] font-semibold">${small}</td>
+        <td class="p-4 border-r border-slate-800 text-sm leading-relaxed">
+            ${formatValue(fVal)}
+        </td>
+        <td class="p-4 text-sm leading-relaxed">
+            ${formatValue(pVal)}
+        </td>
+    `;
         tableBody.appendChild(tr);
     }
 
@@ -180,6 +195,10 @@ document.addEventListener("DOMContentLoaded", () => {
                         `<span class="inline-block bg-slate-800 border border-slate-700 rounded px-2 py-0.5 m-0.5 text-[10px] text-blue-200">${v}</span>`,
                 )
                 .join("");
+        }
+        if (typeof val === "object" && val !== null) {
+            // 新增：處理物件，顯示格式化的 JSON
+            return `<pre class="text-slate-300 text-xs bg-slate-800 p-1 rounded overflow-x-auto">${JSON.stringify(val, null, 2)}</pre>`;
         }
         return `<div class="text-slate-300">${val}</div>`;
     }
