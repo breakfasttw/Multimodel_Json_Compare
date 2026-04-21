@@ -283,10 +283,10 @@ document.addEventListener("DOMContentLoaded", () => {
         <td class="p-4 border-r border-slate-800 font-bold text-blue-300/80 text-[10px] w-[7.5%]">
             ${isFirstInGroup ? (cellToAnnotate === "l1" ? wrapWithTooltip(l1) : l1) : ""}
         </td>
-        <td class="p-4 border-r border-slate-800 text-slate-400 text-[10px] w-[7.5%]">
+        <td class="p-4 border-r border-slate-800 text-slate-200 text-[10px] w-[7.5%]">
             ${cellToAnnotate === "l2" ? wrapWithTooltip(l2) : l2}
         </td>
-        <td class="p-4 border-r border-slate-800 text-slate-400 text-[10px] w-[7.5%]">
+        <td class="p-4 border-r border-slate-800 text-slate-200 text-[10px] w-[7.5%]">
             ${cellToAnnotate === "l3" ? wrapWithTooltip(l3) : l3}
         </td>
         <td class="p-4 border-r border-slate-800 text-slate-100 text-[10px] font-semibold w-[7.5%]">
